@@ -1,0 +1,254 @@
+/*CSS RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul,
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/*header*/
+
+#topnav .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#topnav a {
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
+
+#button {
+    border: 2px solid #2196F3;
+    padding: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+#button a {
+    color: #2196F3;
+}
+
+.nav button {
+    padding: 10px 10px;
+    top: 32 px;
+    background: #004AAD;
+    border-radius: 4px;
+}
+
+#topnav img {
+    padding: 20px
+}
+
+
+/*ABOUT US*/
+
+.about {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 50px;
+}
+
+.about p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 150% */
+    text-align: center;
+    color: #000000;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    width: 1100px;
+    height: 382px;
+    background: #ffffff;
+    position: relative;
+    left: 100px;
+    top: 80px;
+}
+
+
+/*footer lead*/
+
+#lead {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#lead img {
+    margin-bottom: 20px;
+    width: 128px;
+    height: 36px;
+}
+
+
+/*footer explore*/
+
+#explore {
+    position: absolute;
+    top: 220px;
+    left: 350px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#explore h5 {
+    margin-bottom: -10px;
+}
+
+
+/*footer legal*/
+
+#legal {
+    position: absolute;
+    top: 220px;
+    left: 600px;
+}
+
+#legal h5 {
+    margin-bottom: 20px;
+}
+
+
+/*social*/
+
+#social {
+    position: absolute;
+    top: 220px;
+    left: 900px;
+}
+
+#social img {
+    width: auto;
+    height: 40px;
+    margin-top: 30px;
+}

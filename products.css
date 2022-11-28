@@ -1,0 +1,581 @@
+/*CSS RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul,
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/*header*/
+
+#topnav .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#topnav a {
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
+
+#button {
+    border: 2px solid #2196F3;
+    padding: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+#button a {
+    color: #2196F3;
+}
+
+.nav button {
+    padding: 10px 10px;
+    top: 32 px;
+    background: #004AAD;
+    border-radius: 4px;
+}
+
+#topnav img {
+    padding: 20px
+}
+
+
+/*Our Products*/
+
+#our h2 {
+    margin-top: 50px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 48px;
+    color: #001117;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 1. PROSPECTING*/
+
+.ting {
+    position: absolute;
+    top: -1220px;
+    width: 1100px;
+    height: 747px;
+    background: #FFFFFF;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+
+/* div un*/
+
+#un p {
+    width: 12px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: #004AAD;
+    position: absolute;
+    left: 200px;
+    top: 1500px;
+}
+
+#un h2 {
+    position: absolute;
+    left: 200px;
+    top: 1520px;
+    color: #4E6269;
+    width: 454px;
+    height: 48px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 48px;
+    color: #001117;
+}
+
+
+/*div deux*/
+
+#duex {
+    position: absolute;
+    left: 200px;
+    top: 1580px;
+    direction: inline;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #4E6269;
+}
+
+#lily {
+    position: absolute;
+    left: 200px;
+    top: 1720px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 24px;
+    color: #4E6269;
+}
+
+.li img {
+    position: relative;
+    left: 0px;
+    width: 20px;
+    height: 23px;
+    top: 5px;
+}
+
+#tres img {
+    position: relative;
+    width: 350px;
+    height: 433px;
+    left: 825px;
+    top: 50px;
+    background: url(pp.jpg);
+}
+
+
+/* 2. PROSPECTING PLUS */
+
+.plus {
+    position: absolute;
+    top: -1350px;
+    width: 1100px;
+    height: 687px;
+    background: #FFFFFF;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+
+/* plus image*/
+
+#cuatro img {
+    position: absolute;
+    width: 354px;
+    height: 438px;
+    left: 200px;
+    top: 2150px;
+}
+
+
+/* content */
+
+.plus #cinq p {
+    width: 12px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: #004AAD;
+    position: absolute;
+    left: 720px;
+    top: 2160px;
+}
+
+.plus #cinq h2 {
+    color: #4E6269;
+    width: 454px;
+    height: 48px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 48px;
+    color: #001117;
+    position: absolute;
+    left: 720px;
+    top: 2190px;
+}
+
+.plus #sei p {
+    position: absolute;
+    left: 720px;
+    top: 2260px;
+    width: 469px;
+    height: 120px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #4E6269;
+}
+
+#sette {
+    position: absolute;
+    left: 720px;
+    top: 2380px;
+    direction: inline;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 24px;
+    color: #4E6269;
+}
+
+.bi img {
+    position: relative;
+    left: 0px;
+    width: 20px;
+    height: 23px;
+    top: 5px;
+}
+
+
+/* 3. Book A call*/
+
+.um {
+    position: absolute;
+    top: -1250px;
+    width: 1100px;
+    height: 747px;
+    background: #FFFFFF;
+    flex: none;
+    order: 4;
+    flex-grow: 0
+}
+
+
+/*image neuf*/
+
+#neuf img {
+    position: absolute;
+    width: 354px;
+    height: 438px;
+    left: 770px;
+    top: 2750px;
+}
+
+
+/*content*/
+
+#huit p {
+    position: absolute;
+    left: 200px;
+    top: 2720px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: #004AAD;
+}
+
+#huit h2 {
+    position: absolute;
+    left: 200px;
+    top: 2750px;
+    color: #4E6269;
+    width: 454px;
+    height: 48px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 48px;
+    color: #001117;
+}
+
+#otto p {
+    position: absolute;
+    left: 200px;
+    top: 2800px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #4E6269;
+}
+
+#ocho {
+    position: absolute;
+    left: 200px;
+    top: 2920px;
+    direction: inline;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 24px;
+    color: #4E6269;
+}
+
+.ci img {
+    position: relative;
+    left: 0px;
+    width: 20px;
+    height: 23px;
+    top: 5px;
+}
+
+
+/* 4. Qualified Leads*/
+
+.dix {
+    position: absolute;
+    top: -1250px;
+    width: 1440px;
+    height: 687px;
+    background: #FFFFFF;
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+}
+
+
+/*image*/
+
+#diez img {
+    position: absolute;
+    width: 354px;
+    height: 438px;
+    left: 200px;
+    top: 3300px;
+}
+
+
+/*content*/
+
+#onze p {
+    position: absolute;
+    left: 700px;
+    top: 3350px;
+    width: 17px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: #004AAD;
+}
+
+#onze h2 {
+    position: absolute;
+    left: 700px;
+    top: 3370px;
+    color: #4E6269;
+    width: 454px;
+    height: 48px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 48px;
+    color: #001117;
+}
+
+#dez p {
+    position: absolute;
+    left: 700px;
+    top: 3420px;
+    width: 521px;
+    height: 120px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #4E6269;
+}
+
+#doce {
+    position: absolute;
+    left: 700px;
+    top: 3540px;
+    direction: inline;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 24px;
+    color: #4E6269;
+}
+
+.di img {
+    position: relative;
+    left: 0px;
+    width: 20px;
+    height: 23px;
+    top: 5px;
+}
+
+#doce image {
+    position: absolute;
+    top: auto;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    width: 1100px;
+    height: 382px;
+    background: #ffffff;
+    position: absolute;
+    top: 2600px;
+    left: 100px;
+}
+
+
+/*footer lead*/
+
+#lead {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#lead img {
+    margin-bottom: 20px;
+    width: 128px;
+    height: 36px;
+}
+
+
+/*footer explore*/
+
+#explore {
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#explore h5 {
+    margin-bottom: -10px;
+}
+
+
+/*footer legal*/
+
+#legal {
+    position: absolute;
+    top: 100px;
+    left: 600px;
+}
+
+#legal h5 {
+    margin-bottom: 20px;
+}
+
+
+/*social*/
+
+#social {
+    position: absolute;
+    top: 100px;
+    left: 900px;
+}
+
+#social img {
+    width: auto;
+    height: 40px;
+    margin-top: 30px;
+}
