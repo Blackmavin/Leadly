@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="why.css">
     <title>Leadly - Why Us</title>
 </head>
@@ -13,16 +14,25 @@
 
     <header>
         <div id="topnav">
-            <nav class="nav">
+            <div id="logo">
                 <a href="index.html"><img src="leadly\Untitled-2 1.png" style="float:left" /></a>
+            </div>
+
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <nav class="nav">
                 <div id="button"><a href="Why.html"> Why Us </a></div>
                 <a href="products.html"> Products </a>
                 <a href="about.html"> About </a>
                 <a href="how.html"> How It Works </a>
-                <button><a href="book.html" style="color: white;"> Book A Call With Us </a></button>
-        </div>
+                <button><a href="book.html" style="color: white;">Book A Call With Us </a></button>
+            </nav>
 
-        </nav>
+
+
         </div>
     </header>
 
@@ -30,13 +40,13 @@
         <div class="why">
             <h1>Why Us?</h1>
             <ul id="grow">
-                <li class="li1"><img src="leadly\tick.png" alt="">Rapidly grow your pipeline.</li>
-                <li class="li2"><img src="leadly\tick.png" alt="">Save costs.</li>
-                <li class="li3"><img src="leadly\tick.png" alt="">Experienced and specialized business development team.</li>
-                <li class="li4"><img src="leadly\tick.png" alt="">Faster entry into the Nigerian market.</li>
-                <li class="li5"><img src="leadly\tick.png" alt="">Efficient sales cycle and focus on strategic initiatives.</li>
-                <li class="li6"><img src="leadly\tick.png" alt="">Omnichannel customer engagement.</li>
-                <li class="li7"><img src="leadly\tick.png" alt="">Target new and/or underserved markets.</li>
+                <li class="li"><img src="leadly\tick.png" alt="">Rapidly grow your pipeline.</li>
+                <li class="li"><img src="leadly\tick.png" alt="">Save costs.</li>
+                <li class="li"><img src="leadly\tick.png" alt="">Experienced and specialized business development team.</li>
+                <li class="li"><img src="leadly\tick.png" alt="">Faster entry into the Nigerian market.</li>
+                <li class="li"><img src="leadly\tick.png" alt="">Efficient sales cycle and focus on strategic initiatives.</li>
+                <li class="li"><img src="leadly\tick.png" alt="">Omnichannel customer engagement.</li>
+                <li class="li"><img src="leadly\tick.png" alt="">Target new and/or underserved markets.</li>
             </ul>
         </div>
     </main>
@@ -53,10 +63,10 @@
             </div><br>
 
             <div id="explore">
-                <h5>Explore</h5>
-                <p> Products</p>
-                <p>About Us</p>
-                <p> Contact Us</p>
+                <h5><a href="products.html">Explore</a></h5>
+                <p> <a href="products.html"> Products</a></p>
+                <p><a href="about.html">About Us</a></p>
+                <p><a href="book.html"> Contact Us</a></p>
             </div><br>
 
             <div id="legal">
@@ -67,13 +77,22 @@
 
             <div id="social">
                 <h4>Be Social</h4>
-                <img src="leadly/tweet.png" />
-                <img src="leadly/face.png" />
-                <img src="leadly/insta.png" />
-                <img src="leadly/linked.png" />
+                <a href="#"><img src="leadly/tweet.png" /></a>
+                <a href="#"><img src="leadly/face.png" /></a>
+                <a href="#"><img src="leadly/insta.png" /></a>
+                <a href="#"><img src="leadly/linked.png" /></a>
             </div>
         </footer>
     </div>
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbar = document.getElementsByClassName('nav')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbar.classList.toggle('active')
+        })
+    </script>
 </body>
 
 </html>

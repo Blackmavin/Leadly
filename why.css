@@ -1,113 +1,139 @@
-    /*CSS RESET*/
+/*CSS RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul,
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* change colours to suit your needs */
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* change border colour to suit your needs */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+/*header*
     
-    * {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
+    #logo a {
+        position: fixed;
+        left: 10px;
     }
     
-    body {
-        line-height: 1;
-        font-family: 'Poppins';
-        font-style: normal;
-    }
-    
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section {
-        display: block;
-    }
-    
-    nav ul,
-    ul {
-        list-style: none;
-        text-decoration: none;
-    }
-    
-    blockquote,
-    q {
-        quotes: none;
-    }
-    
-    blockquote:before,
-    blockquote:after,
-    q:before,
-    q:after {
-        content: '';
-        content: none;
-    }
-    
-    a {
-        margin: 0;
-        padding: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
-        text-decoration: none;
-    }
-    /* change colours to suit your needs */
-    
-    ins {
-        background-color: #ff9;
-        color: #000;
-        text-decoration: none;
-    }
-    /* change colours to suit your needs */
-    
-    mark {
-        background-color: #ff9;
-        color: #000;
-        font-style: italic;
-        font-weight: bold;
-    }
-    
-    del {
-        text-decoration: line-through;
-    }
-    
-    abbr[title],
-    dfn[title] {
-        border-bottom: 1px dotted;
-        cursor: help;
-    }
-    
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-    /* change border colour to suit your needs */
-    
-    hr {
-        display: block;
-        height: 1px;
-        border: 0;
-        border-top: 1px solid #cccccc;
-        margin: 1em 0;
-        padding: 0;
-    }
-    
-    input,
-    select {
-        vertical-align: middle;
-    }
-    /*header*/
-    
-    #topnav .nav {
+    .nav {
+        position: relative;
+        left: 120px;
+        top: 25px;
         display: flex;
+        justify-content: space-evenly;
+        align-items: right;
+    }
+     .toggle-button {
+        position: absolute;
+        right: 1rem;
+        top: .75rem;
+        display: none;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        width: 30px;
+        height: 21px;
     }
     
     #topnav a {
@@ -115,13 +141,13 @@
         text-decoration: none;
         padding: 5px;
         text-decoration: none;
-        font-size: 12px;
+        font-size: 14px;
         color: #000;
     }
     
     #button {
         border: 2px solid #2196F3;
-        padding: 10px;
+        padding: 3.45px;
         border-top: 0;
         border-right: 0;
         border-left: 0;
@@ -133,7 +159,7 @@
     
     .nav button {
         padding: 10px 10px;
-        top: 32 px;
+        top: 32px;
         background: #004AAD;
         border-radius: 4px;
     }
@@ -141,7 +167,7 @@
     #topnav img {
         padding: 20px
     }
-    /*MAIN PAGE*/
+    /*MAIN PAGE*
     
     .why {
         display: flex;
@@ -154,7 +180,6 @@
         font-weight: 900;
         font-size: 32px;
         line-height: 48px;
-        /* identical to box height */
         color: #001117;
     }
     
@@ -165,20 +190,25 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 24px;
-        /* identical to box height, or 120% */
         color: #4E6269;
     }
-    /*FOOTER*/
+    
+    .li img {
+        position: relative;
+        left: -5px;
+        top: 5px;
+    }
+    /*FOOTER*
     
     .footer {
-        width: 1100px;
+        width: 1206px;
         height: 382px;
         background: #ffffff;
         position: relative;
         left: 100px;
         top: 60px;
     }
-    /*footer lead*/
+    /*footer lead*
     
     #lead {
         position: absolute;
@@ -195,7 +225,7 @@
         width: 128px;
         height: 36px;
     }
-    /*footer explore*/
+    /*footer explore*
     
     #explore {
         position: absolute;
@@ -210,7 +240,11 @@
     #explore h5 {
         margin-bottom: -10px;
     }
-    /*footer legal*/
+    
+    #explore a {
+        color: black;
+    }
+    /*footer legal*
     
     #legal {
         position: absolute;
@@ -221,7 +255,7 @@
     #legal h5 {
         margin-bottom: 20px;
     }
-    /*social*/
+    /*social*
     
     #social {
         position: absolute;
@@ -233,4 +267,205 @@
         width: auto;
         height: 40px;
         margin-top: 30px;
+    }*/
+
+@media (max-width: 900px) {
+    /*mobile view*/
+    #logo img {
+        width: 79px;
+        height: 25px;
+        margin: 10px;
     }
+    .toggle-button {
+        position: absolute;
+        right: 1rem;
+        top: .75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    .toggle-button .bar {
+        height: 3px;
+        width: 75%;
+        background-color: blue;
+        border-radius: 10px;
+    }
+    .nav {
+        width: 100%;
+    }
+    .nav a {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    a:hover {
+        color: green;
+    }
+    .nav button {
+        background: #004AAD;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1px 1px;
+        position: relative;
+        left: 30%;
+    }
+    */
+    /*
+    .nav {
+        display: none;
+        position: absolute;
+        background-color: white;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .nav a {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 123.19%;
+        text-align: center;
+        color: #2F3A3B;
+        margin: 20px;
+    }
+    .nav button {
+        padding: 10px 10px;
+        background: #004AAD;
+        border-radius: 4px;
+        color: #000;
+    }
+    input[type=checkbox]:checked~.nav {
+        display: flex;
+        flex-direction: column;
+    }
+    input[type=checkbox] {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+        margin: 10px;
+        height: 30px;
+        color: blue;
+        font-size: 19px;
+        background-color: #FFFFFF;
+    }*/
+    /*Why Us*/
+    .why {
+        position: relative;
+        top: 100px;
+    }
+    h1 {
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 39px;
+        text-align: center;
+        max-width: 48rem;
+    }
+    #grow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        max-width: 48rem;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #4E6269;
+        margin-bottom: 10px;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    .li img {
+        position: relative;
+        top: 5px;
+    }
+    /*footer*/
+    .footer {
+        position: relative;
+        width: 428px;
+        height: 528px;
+        top: 100px;
+        background: #FFFFFF;
+    }
+    #lead img {
+        position: relative;
+        left: 20px;
+    }
+    #lead p {
+        display: none;
+    }
+    #explore {
+        position: relative;
+        left: 20px;
+    }
+    #explore a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E6269;
+    }
+    #explore h5 {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #4E6269
+    }
+    #explore p {
+        margin-bottom: 15px;
+    }
+    #legal {
+        position: absolute;
+        left: 275px;
+        top: 69px;
+    }
+    #legal h5 {
+        margin-bottom: 15px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #4E6269
+    }
+    #legal p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E6269;
+    }
+    #social h4 {
+        position: relative;
+        left: 20px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #4E6269;
+    }
+    #social a {
+        position: relative;
+        left: 25px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E6269;
+        margin-bottom: 50px;
+    }
+    #social img {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        left: -5px;
+        top: 5px;
+        align-items: center;
+    }
+}

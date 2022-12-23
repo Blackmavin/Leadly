@@ -112,10 +112,20 @@ select {
 
 /*header*/
 
-#topnav .nav {
+
+/**
+#logo a {
+    position: fixed;
+    left: 10px;
+}
+
+.nav {
+    position: relative;
+    left: 120px;
+    top: 25px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: right;
 }
 
 #topnav a {
@@ -129,7 +139,7 @@ select {
 
 #button {
     border: 2px solid #2196F3;
-    padding: 10px;
+    padding: 3.45px;
     border-top: 0;
     border-right: 0;
     border-left: 0;
@@ -151,7 +161,7 @@ select {
 }
 
 
-/*ABOUT US*/
+/*ABOUT US*
 
 .about {
     margin-top: 50px;
@@ -172,16 +182,15 @@ select {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    /* or 150% */
     text-align: center;
     color: #000000;
 }
 
 
-/*FOOTER*/
+/*FOOTER*
 
 .footer {
-    width: 1100px;
+    width: 1206px;
     height: 382px;
     background: #ffffff;
     position: relative;
@@ -190,7 +199,7 @@ select {
 }
 
 
-/*footer lead*/
+/*footer lead*
 
 #lead {
     position: absolute;
@@ -209,7 +218,7 @@ select {
 }
 
 
-/*footer explore*/
+/*footer explore*
 
 #explore {
     position: absolute;
@@ -225,8 +234,12 @@ select {
     margin-bottom: -10px;
 }
 
+#explore a {
+    color: black;
+}
 
-/*footer legal*/
+
+/*footer legal*
 
 #legal {
     position: absolute;
@@ -239,7 +252,7 @@ select {
 }
 
 
-/*social*/
+/*social*
 
 #social {
     position: absolute;
@@ -251,4 +264,122 @@ select {
     width: auto;
     height: 40px;
     margin-top: 30px;
+}
+
+**/
+
+@media (max-width: 900px) {
+    /*mobile view*/
+    #logo img {
+        width: 79px;
+        height: 25px;
+        margin-bottom: 10px;
+    }
+    /*About*/
+    .about {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .about h2 {
+        position: absolute;
+        text-align: center;
+        width: 388px;
+        height: 39px;
+        top: 88px;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 39px;
+        text-align: center;
+    }
+    .about p {
+        margin-top: 10px;
+        position: relative;
+        width: 389px;
+        height: 510px;
+        top: 51px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .footer {
+        position: relative;
+        width: 428px;
+        height: 528px;
+        top: 100px;
+        background: #FFFFFF;
+    }
+    #lead img {
+        position: relative;
+        left: 20px;
+    }
+    #lead p {
+        display: none;
+    }
+    #explore {
+        position: relative;
+        left: 20px;
+    }
+    #explore a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E6269;
+    }
+    #explore h5 {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #4E6269
+    }
+    #explore p {
+        margin-bottom: 15px;
+    }
+    #legal {
+        position: absolute;
+        left: 275px;
+        top: 69px;
+    }
+    #legal h5 {
+        margin-bottom: 15px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #4E6269
+    }
+    #legal p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E6269;
+    }
+    #social h4 {
+        position: relative;
+        left: 20px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #4E6269;
+    }
+    #social a {
+        position: relative;
+        left: 25px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E6269;
+        margin-bottom: 50px;
+    }
+    #social img {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        left: -5px;
+        top: 5px;
+        align-items: center;
+    }
 }

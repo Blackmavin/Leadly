@@ -110,15 +110,23 @@ select {
 }
 
 
-/*header*/
+/*header*
 
-#topnav .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#logo a {
+    position: fixed;
+    left: 10px;
 }
 
-#topnav a {
+.nav {
+    position: relative;
+    left: 120px;
+    top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: right;
+}
+
+.nav a {
     text-align: center;
     text-decoration: none;
     padding: 5px;
@@ -129,7 +137,7 @@ select {
 
 #button {
     border: 2px solid #2196F3;
-    padding: 10px;
+    padding: 3.45px;
     border-top: 0;
     border-right: 0;
     border-left: 0;
@@ -141,7 +149,7 @@ select {
 
 .nav button {
     padding: 10px 10px;
-    top: 32 px;
+    top: 32px;
     background: #004AAD;
     border-radius: 4px;
 }
@@ -151,7 +159,7 @@ select {
 }
 
 
-/*Main Book A Call*/
+/*Main Book A Call*
 
 main h2 {
     display: flex;
@@ -166,10 +174,9 @@ main h2 {
 .book {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-self: center;
     position: absolute;
-    width: 1100px;
+    width: 1206px;
     height: 362px;
     left: 80px;
     top: 276px;
@@ -179,20 +186,20 @@ main h2 {
 
 .book li {
     position: relative;
-    left: 50px;
+    top: 45px;
+    text-align: center;
     margin: 50px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    /* identical to box height, or 143% */
     color: #4E6269;
 }
 
 
-/*FOOTER*/
+/*FOOTER*
 
 .footer {
-    width: 1100px;
+    width: 1206px;
     height: 382px;
     background: #ffffff;
     position: relative;
@@ -201,7 +208,7 @@ main h2 {
 }
 
 
-/*footer lead*/
+/*footer lead*
 
 #lead {
     position: absolute;
@@ -220,7 +227,7 @@ main h2 {
 }
 
 
-/*footer explore*/
+/*footer explore*
 
 #explore {
     position: absolute;
@@ -236,8 +243,12 @@ main h2 {
     margin-bottom: -10px;
 }
 
+#explore a {
+    color: black;
+}
 
-/*footer legal*/
+
+/*footer legal*
 
 #legal {
     position: absolute;
@@ -250,7 +261,7 @@ main h2 {
 }
 
 
-/*social*/
+/*social*
 
 #social {
     position: absolute;
@@ -262,4 +273,125 @@ main h2 {
     width: auto;
     height: 40px;
     margin-top: 30px;
+}
+*/
+
+@media (max-width: 900px) {
+    /*mobile view*/
+    /*hearder*/
+    #logo img {
+        width: 79px;
+        height: 25px;
+        margin-bottom: 10px;
+    }
+    /*book a call*/
+    main h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 48px;
+        margin: 50px;
+    }
+    .book {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 10px;
+        max-width: 96%;
+        height: 362px;
+        background: #EBF1F9;
+        border-radius: 20px;
+    }
+    .book li {
+        position: relative;
+        text-align: center;
+        margin: 50px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4E6269;
+    }
+    /*footer*/
+    .footer {
+        position: relative;
+        width: 428px;
+        height: 528px;
+        top: 100px;
+        background: #FFFFFF;
+    }
+    #lead img {
+        position: relative;
+        left: 20px;
+    }
+    #lead p {
+        display: none;
+    }
+    #explore {
+        position: relative;
+        left: 20px;
+    }
+    #explore a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E6269;
+    }
+    #explore h5 {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #4E6269
+    }
+    #explore p {
+        margin-bottom: 15px;
+    }
+    #legal {
+        position: absolute;
+        left: 275px;
+        top: 69px;
+    }
+    #legal h5 {
+        margin-bottom: 15px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #4E6269
+    }
+    #legal p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E6269;
+    }
+    #social h4 {
+        position: relative;
+        left: 20px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #4E6269;
+    }
+    #social a {
+        position: relative;
+        left: 25px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E6269;
+        margin-bottom: 50px;
+    }
+    #social img {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        left: -5px;
+        top: 5px;
+        align-items: center;
+    }
 }

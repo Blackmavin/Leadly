@@ -110,12 +110,20 @@ select {
 }
 
 
-/*header*/
+/*header*
 
-#topnav .nav {
+#logo a {
+    position: fixed;
+    left: 10px;
+}
+
+.nav {
+    position: relative;
+    left: 120px;
+    top: 25px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: right;
 }
 
 #topnav a {
@@ -129,7 +137,7 @@ select {
 
 #button {
     border: 2px solid #2196F3;
-    padding: 10px;
+    padding: 3.45px;
     border-top: 0;
     border-right: 0;
     border-left: 0;
@@ -141,7 +149,7 @@ select {
 
 .nav button {
     padding: 10px 10px;
-    top: 32 px;
+    top: 32px;
     background: #004AAD;
     border-radius: 4px;
 }
@@ -151,7 +159,7 @@ select {
 }
 
 
-/*How It WOrks*/
+/*How It WOrks*
 
 main {
     display: flex;
@@ -168,7 +176,7 @@ main {
 }
 
 
-/*call, pro, agree,subs, and, moni*/
+/*call, pro, agree,subs, and, moni*
 
 #call {
     position: absolute;
@@ -274,15 +282,15 @@ main {
 }
 
 
-/*FOOTER*/
+/*FOOTER*
 
 .footer {
-    width: 1100px;
+    width: 1206px;
     height: 382px;
     background: #ffffff;
     position: relative;
     left: 100px;
-    top: 320px;
+    top: 340px;
 }
 
 .footer h6 {
@@ -298,7 +306,7 @@ main {
 }
 
 
-/*footer lead*/
+/*footer lead*
 
 #lead {
     position: absolute;
@@ -317,7 +325,7 @@ main {
 }
 
 
-/*footer explore*/
+/*footer explore*
 
 #explore {
     position: absolute;
@@ -333,8 +341,12 @@ main {
     margin-bottom: -10px;
 }
 
+#explore a {
+    color: black;
+}
 
-/*footer legal*/
+
+/*footer legal*
 
 #legal {
     position: absolute;
@@ -347,7 +359,7 @@ main {
 }
 
 
-/*social*/
+/*social*
 
 #social {
     position: absolute;
@@ -359,4 +371,227 @@ main {
     width: auto;
     height: 40px;
     margin-top: 30px;
+}
+*/
+
+@media (max-width: 900px) {
+    /*mobile view*/
+    /*hearder*/
+    #logo img {
+        width: 79px;
+        height: 25px;
+        margin-bottom: 10px;
+    }
+    /*How it works*/
+    .under,
+    #how h2,
+    .under img {
+        display: none;
+    }
+    #works {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #works h2 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 39px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .ontop {
+        justify-content: center;
+        align-items: center;
+        width: 100rem;
+    }
+    #disc {
+        position: relative;
+        left: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 292px;
+        height: 46px;
+        background: #EBF1F9;
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    #disc img,
+    #proposal img,
+    #agreement img,
+    #subscript img,
+    #cycling img,
+    #monitoring img {
+        position: absolute;
+        top: 55px;
+        left: 135px;
+    }
+    #proposal {
+        position: relative;
+        left: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 292px;
+        height: 46px;
+        background: #EBF1F9;
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    #agreement {
+        position: relative;
+        left: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 292px;
+        height: 46px;
+        background: #EBF1F9;
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    #subscript {
+        position: relative;
+        left: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 292px;
+        height: 46px;
+        background: #EBF1F9;
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    #cycling {
+        position: relative;
+        left: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 292px;
+        height: 46px;
+        background: #EBF1F9;
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    #monitoring {
+        position: relative;
+        left: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 292px;
+        height: 46px;
+        background: #EBF1F9;
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+    }
+    /*footer*/
+    .footer {
+        position: relative;
+        width: 428px;
+        height: 528px;
+        top: 100px;
+        background: #FFFFFF;
+    }
+    #lead img {
+        position: relative;
+        left: 20px;
+    }
+    #lead p {
+        display: none;
+    }
+    #explore {
+        position: relative;
+        left: 20px;
+    }
+    #explore a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E6269;
+    }
+    #explore h5 {
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #4E6269
+    }
+    #explore p {
+        margin-bottom: 15px;
+    }
+    #legal {
+        position: absolute;
+        left: 275px;
+        top: 69px;
+    }
+    #legal h5 {
+        margin-bottom: 15px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #4E6269
+    }
+    #legal p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E6269;
+    }
+    #social h4 {
+        position: relative;
+        left: 20px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #4E6269;
+    }
+    #social a {
+        position: relative;
+        left: 25px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #4E6269;
+        margin-bottom: 50px;
+    }
+    #social img {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        left: -5px;
+        top: 5px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1070px) {
+    .ontop,
+    #works h2,
+    .ontop img {
+        display: none;
+    }
 }
