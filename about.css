@@ -112,8 +112,6 @@ select {
 
 /*header*/
 
-
-/**
 #logo a {
     position: fixed;
     left: 10px;
@@ -161,7 +159,7 @@ select {
 }
 
 
-/*ABOUT US*
+/*ABOUT US*/
 
 .about {
     margin-top: 50px;
@@ -187,7 +185,7 @@ select {
 }
 
 
-/*FOOTER*
+/*FOOTER*/
 
 .footer {
     width: 1206px;
@@ -199,7 +197,7 @@ select {
 }
 
 
-/*footer lead*
+/*footer lead*/
 
 #lead {
     position: absolute;
@@ -218,7 +216,7 @@ select {
 }
 
 
-/*footer explore*
+/*footer explore*/
 
 #explore {
     position: absolute;
@@ -239,7 +237,7 @@ select {
 }
 
 
-/*footer legal*
+/*footer legal*/
 
 #legal {
     position: absolute;
@@ -252,7 +250,7 @@ select {
 }
 
 
-/*social*
+/*social*/
 
 #social {
     position: absolute;
@@ -265,8 +263,6 @@ select {
     height: 40px;
     margin-top: 30px;
 }
-
-**/
 
 @media (max-width: 900px) {
     /*mobile view*/

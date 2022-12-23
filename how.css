@@ -110,7 +110,7 @@ select {
 }
 
 
-/*header*
+/*header*/
 
 #logo a {
     position: fixed;
@@ -159,7 +159,7 @@ select {
 }
 
 
-/*How It WOrks*
+/*How It WOrks*/
 
 main {
     display: flex;
@@ -176,7 +176,7 @@ main {
 }
 
 
-/*call, pro, agree,subs, and, moni*
+/*call, pro, agree,subs, and, moni*/
 
 #call {
     position: absolute;
@@ -282,7 +282,7 @@ main {
 }
 
 
-/*FOOTER*
+/*FOOTER*/
 
 .footer {
     width: 1206px;
@@ -306,7 +306,7 @@ main {
 }
 
 
-/*footer lead*
+/*footer lead*/
 
 #lead {
     position: absolute;
@@ -325,7 +325,7 @@ main {
 }
 
 
-/*footer explore*
+/*footer explore*/
 
 #explore {
     position: absolute;
@@ -346,7 +346,7 @@ main {
 }
 
 
-/*footer legal*
+/*footer legal*/
 
 #legal {
     position: absolute;
@@ -359,7 +359,7 @@ main {
 }
 
 
-/*social*
+/*social*/
 
 #social {
     position: absolute;
@@ -372,7 +372,6 @@ main {
     height: 40px;
     margin-top: 30px;
 }
-*/
 
 @media (max-width: 900px) {
     /*mobile view*/

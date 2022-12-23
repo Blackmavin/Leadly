@@ -110,7 +110,7 @@ select {
 }
 
 
-/*header*
+/*header*/
 
 #logo a {
     position: fixed;
@@ -159,7 +159,7 @@ select {
 }
 
 
-/*Our Products*
+/*Our Products*/
 
 #our h2 {
     margin-top: 50px;
@@ -173,7 +173,7 @@ select {
 }
 
 
-/* 1. PROSPECTING*
+/* 1. PROSPECTING*/
 
 .ting {
     position: absolute;
@@ -187,7 +187,7 @@ select {
 }
 
 
-/* div un*
+/* div un*/
 
 #un p {
     width: 12px;
@@ -216,7 +216,7 @@ select {
 }
 
 
-/*div deux*
+/*div deux*/
 
 #duex {
     position: absolute;
@@ -257,7 +257,7 @@ select {
 }
 
 
-/* 2. PROSPECTING PLUS *
+/* 2. PROSPECTING PLUS */
 
 .plus {
     position: absolute;
@@ -271,7 +271,7 @@ select {
 }
 
 
-/* plus image*
+/* plus image*/
 
 #cuatro img {
     position: absolute;
@@ -282,7 +282,7 @@ select {
 }
 
 
-/* content *
+/* content */
 
 .plus #cinq p {
     width: 12px;
@@ -342,7 +342,7 @@ select {
 }
 
 
-/* 3. Book A call*
+/* 3. Book A call*/
 
 .um {
     position: absolute;
@@ -356,7 +356,7 @@ select {
 }
 
 
-/*image neuf*
+/*image neuf*/
 
 #neuf img {
     position: absolute;
@@ -367,7 +367,8 @@ select {
 }
 
 
-/*content*
+/*content*/
+
 #huit p {
     position: absolute;
     left: 200px;
@@ -422,7 +423,7 @@ select {
 }
 
 
-/* 4. Qualified Leads*
+/* 4. Qualified Leads*/
 
 .dix {
     position: absolute;
@@ -436,7 +437,7 @@ select {
 }
 
 
-/*image*
+/*image*/
 
 #diez img {
     position: absolute;
@@ -447,7 +448,8 @@ select {
 }
 
 
-/*content*
+/*content*/
+
 #onze p {
     position: absolute;
     left: 700px;
@@ -511,7 +513,7 @@ select {
 }
 
 
-/*FOOTER*
+/*FOOTER*/
 
 .footer {
     width: 1206px;
@@ -523,7 +525,7 @@ select {
 }
 
 
-/*footer lead*
+/*footer lead*/
 
 #lead {
     position: absolute;
@@ -542,7 +544,7 @@ select {
 }
 
 
-/*footer explore*
+/*footer explore*/
 
 #explore {
     position: absolute;
@@ -563,7 +565,7 @@ select {
 }
 
 
-/*footer legal*
+/*footer legal*/
 
 #legal {
     position: absolute;
@@ -576,7 +578,8 @@ select {
 }
 
 
-/*social*
+/*social*/
+
 #social {
     position: absolute;
     top: 100px;
@@ -588,7 +591,6 @@ select {
     height: 40px;
     margin-top: 30px;
 }
-*/
 
 @media (max-width: 900px) {
     /*mobile view*/

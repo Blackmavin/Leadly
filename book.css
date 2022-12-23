@@ -110,7 +110,7 @@ select {
 }
 
 
-/*header*
+/*header*/
 
 #logo a {
     position: fixed;
@@ -159,7 +159,7 @@ select {
 }
 
 
-/*Main Book A Call*
+/*Main Book A Call*/
 
 main h2 {
     display: flex;
@@ -196,7 +196,7 @@ main h2 {
 }
 
 
-/*FOOTER*
+/*FOOTER*/
 
 .footer {
     width: 1206px;
@@ -208,7 +208,7 @@ main h2 {
 }
 
 
-/*footer lead*
+/*footer lead*/
 
 #lead {
     position: absolute;
@@ -227,7 +227,7 @@ main h2 {
 }
 
 
-/*footer explore*
+/*footer explore*/
 
 #explore {
     position: absolute;
@@ -248,7 +248,7 @@ main h2 {
 }
 
 
-/*footer legal*
+/*footer legal*/
 
 #legal {
     position: absolute;
@@ -261,7 +261,7 @@ main h2 {
 }
 
 
-/*social*
+/*social*/
 
 #social {
     position: absolute;
@@ -274,7 +274,6 @@ main h2 {
     height: 40px;
     margin-top: 30px;
 }
-*/
 
 @media (max-width: 900px) {
     /*mobile view*/
