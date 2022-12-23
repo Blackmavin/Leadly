@@ -587,7 +587,7 @@
     }
     
     #tres img {
-        position: relative;
+        position: absolute;
         width: 350px;
         height: 433px;
         left: 825px;
