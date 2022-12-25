@@ -175,6 +175,10 @@ main {
     margin-bottom: 50px;
 }
 
+.ontop {
+    display: none;
+}
+
 
 /*call, pro, agree,subs, and, moni*/
 
@@ -290,7 +294,7 @@ main {
     background: #ffffff;
     position: relative;
     left: 100px;
-    top: 340px;
+    top: 390px;
 }
 
 .footer h6 {
@@ -373,6 +377,10 @@ main {
     margin-top: 30px;
 }
 
+#social p {
+    display: none;
+}
+
 @media (max-width: 900px) {
     /*mobile view*/
     /*hearder*/
@@ -403,11 +411,11 @@ main {
     .ontop {
         justify-content: center;
         align-items: center;
-        width: 100rem;
+        display: block;
     }
     #disc {
         position: relative;
-        left: 68px;
+        left: 5%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -432,7 +440,7 @@ main {
     }
     #proposal {
         position: relative;
-        left: 68px;
+        left: 5%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -447,7 +455,7 @@ main {
     }
     #agreement {
         position: relative;
-        left: 68px;
+        left: 5%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -462,7 +470,7 @@ main {
     }
     #subscript {
         position: relative;
-        left: 68px;
+        left: 5%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -477,7 +485,7 @@ main {
     }
     #cycling {
         position: relative;
-        left: 68px;
+        left: 5%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -492,7 +500,7 @@ main {
     }
     #monitoring {
         position: relative;
-        left: 68px;
+        left: 5%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -507,43 +515,44 @@ main {
     }
     /*footer*/
     .footer {
-        position: relative;
-        width: 428px;
+        position: absolute;
+        width: 80%;
         height: 528px;
-        top: 100px;
+        top: 750px;
+        left: 20%;
         background: #FFFFFF;
     }
     #lead img {
-        position: relative;
-        left: 20px;
+        position: absolute;
+        left: -80px;
+        top: -50px;
+        width: 79px;
+        height: 25px;
     }
     #lead p {
         display: none;
     }
     #explore {
         position: relative;
-        left: 20px;
+        left: -50px;
+        width: 100px;
+        top: 80px;
     }
-    #explore a {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: #4E6269;
-    }
-    #explore h5 {
+    #explore h5 a {
         margin-bottom: 15px;
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
         color: #4E6269
     }
-    #explore p {
+    #explore p a {
+        color: #4E6269;
         margin-bottom: 15px;
     }
     #legal {
         position: absolute;
-        left: 275px;
-        top: 69px;
+        left: 50%;
+        top: 90px;
     }
     #legal h5 {
         margin-bottom: 15px;
@@ -558,6 +567,11 @@ main {
         font-size: 16px;
         line-height: 24px;
         color: #4E6269;
+    }
+    #social {
+        position: relative;
+        left: -70px;
+        top: 100px;
     }
     #social h4 {
         position: relative;
@@ -579,11 +593,19 @@ main {
     }
     #social img {
         position: relative;
+        margin: -5px;
         width: 20px;
         height: 20px;
         left: -5px;
         top: 5px;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #social p {
+        position: relative;
+        display: block;
+        left: 25px;
+        top: -15px;
     }
 }
 

@@ -176,9 +176,9 @@ main h2 {
     flex-direction: column;
     align-self: center;
     position: absolute;
-    width: 1206px;
+    width: 80%;
     height: 362px;
-    left: 80px;
+    left: 10%;
     top: 276px;
     background: #F1F4FB;
     border-radius: 20px;
@@ -186,6 +186,7 @@ main h2 {
 
 .book li {
     position: relative;
+    width: 90%;
     top: 45px;
     text-align: center;
     margin: 50px;
@@ -198,6 +199,9 @@ main h2 {
 
 /*FOOTER*/
 
+
+/*FOOTER*/
+
 .footer {
     width: 1206px;
     height: 382px;
@@ -205,6 +209,18 @@ main h2 {
     position: relative;
     left: 100px;
     top: 500px;
+}
+
+.footer h6 {
+    text-align: center;
+    padding: 3px;
+    position: absolute;
+    width: 1000px;
+    height: 150px;
+    left: 110px;
+    background: #FFFFFF;
+    box-shadow: 0px 34px 68px #D9E1F4;
+    border-radius: 20px;
 }
 
 
@@ -275,6 +291,10 @@ main h2 {
     margin-top: 30px;
 }
 
+#social p {
+    display: none;
+}
+
 @media (max-width: 900px) {
     /*mobile view*/
     /*hearder*/
@@ -295,17 +315,20 @@ main h2 {
     }
     .book {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        left: 10px;
-        max-width: 96%;
+        flex-direction: column;
+        align-self: center;
+        position: absolute;
+        width: 80%;
         height: 362px;
-        background: #EBF1F9;
+        left: 10%;
+        top: 276px;
+        background: #F1F4FB;
         border-radius: 20px;
     }
     .book li {
         position: relative;
+        width: 80%;
+        top: 45px;
         text-align: center;
         margin: 50px;
         font-weight: 400;
@@ -315,43 +338,44 @@ main h2 {
     }
     /*footer*/
     .footer {
-        position: relative;
-        width: 428px;
+        position: absolute;
+        width: 80%;
         height: 528px;
-        top: 100px;
+        top: 700px;
+        left: 20%;
         background: #FFFFFF;
     }
     #lead img {
-        position: relative;
-        left: 20px;
+        position: absolute;
+        left: -80px;
+        top: -150px;
+        width: 79px;
+        height: 25px;
     }
     #lead p {
         display: none;
     }
     #explore {
         position: relative;
-        left: 20px;
+        left: -50px;
+        width: 100px;
+        top: 80px;
     }
-    #explore a {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: #4E6269;
-    }
-    #explore h5 {
+    #explore h5 a {
         margin-bottom: 15px;
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
         color: #4E6269
     }
-    #explore p {
+    #explore p a {
+        color: #4E6269;
         margin-bottom: 15px;
     }
     #legal {
         position: absolute;
-        left: 275px;
-        top: 69px;
+        left: 50%;
+        top: 90px;
     }
     #legal h5 {
         margin-bottom: 15px;
@@ -366,6 +390,11 @@ main h2 {
         font-size: 16px;
         line-height: 24px;
         color: #4E6269;
+    }
+    #social {
+        position: relative;
+        left: -70px;
+        top: 100px;
     }
     #social h4 {
         position: relative;
@@ -387,10 +416,18 @@ main h2 {
     }
     #social img {
         position: relative;
+        margin: -5px;
         width: 20px;
         height: 20px;
         left: -5px;
         top: 5px;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #social p {
+        position: relative;
+        display: block;
+        left: 25px;
+        top: -15px;
     }
 }

@@ -112,7 +112,7 @@ select {
 
 /*header*/
 
-#logo a {
+#logo {
     position: fixed;
     left: 10px;
 }
@@ -264,12 +264,18 @@ select {
     margin-top: 30px;
 }
 
+#social p {
+    display: none;
+}
+
 @media (max-width: 900px) {
     /*mobile view*/
     #logo img {
+        position: absolute;
+        top: -40px;
         width: 79px;
-        height: 25px;
-        margin-bottom: 10px;
+        height: 22px;
+        margin: 10px;
     }
     /*About*/
     .about {
@@ -299,44 +305,46 @@ select {
         line-height: 30px;
         text-align: center;
     }
+    /*footer*/
     .footer {
-        position: relative;
-        width: 428px;
+        position: absolute;
+        width: 80%;
         height: 528px;
-        top: 100px;
+        top: 700px;
+        left: 20%;
         background: #FFFFFF;
     }
     #lead img {
-        position: relative;
-        left: 20px;
+        position: absolute;
+        left: -80px;
+        top: -150px;
+        width: 79px;
+        height: 25px;
     }
     #lead p {
         display: none;
     }
     #explore {
         position: relative;
-        left: 20px;
-    }
-    #explore a {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: #4E6269;
+        left: -50px;
+        width: 100px;
+        top: 80px;
     }
     #explore h5 {
-        margin-bottom: 15px;
+        margin-bottom: 0px;
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
         color: #4E6269
     }
-    #explore p {
+    #explore p a {
+        color: #4E6269;
         margin-bottom: 15px;
     }
     #legal {
         position: absolute;
-        left: 275px;
-        top: 69px;
+        left: 50%;
+        top: 90px;
     }
     #legal h5 {
         margin-bottom: 15px;
@@ -351,6 +359,11 @@ select {
         font-size: 16px;
         line-height: 24px;
         color: #4E6269;
+    }
+    #social {
+        position: relative;
+        left: -70px;
+        top: 100px;
     }
     #social h4 {
         position: relative;
@@ -372,10 +385,18 @@ select {
     }
     #social img {
         position: relative;
+        margin: -5px;
         width: 20px;
         height: 20px;
         left: -5px;
         top: 5px;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #social p {
+        position: relative;
+        display: block;
+        left: 25px;
+        top: -15px;
     }
 }

@@ -112,9 +112,10 @@ select {
 
 /*header*/
 
-#logo a {
-    position: fixed;
-    left: 10px;
+#logo {
+    position: absolute;
+    width: 79px;
+    height: 22px;
 }
 
 .nav {
@@ -205,13 +206,28 @@ select {
 
 /*FOOTER*/
 
+
+/*FOOTER*/
+
 .footer {
     width: 1206px;
     height: 382px;
     background: #ffffff;
     position: relative;
     left: 100px;
-    top: 60px;
+    top: 390px;
+}
+
+.footer h6 {
+    text-align: center;
+    padding: 3px;
+    position: absolute;
+    width: 1000px;
+    height: 150px;
+    left: 110px;
+    background: #FFFFFF;
+    box-shadow: 0px 34px 68px #D9E1F4;
+    border-radius: 20px;
 }
 
 
@@ -282,93 +298,18 @@ select {
     margin-top: 30px;
 }
 
+#social p {
+    display: none;
+}
+
 @media (max-width: 900px) {
     /*mobile view*/
-    #logo img {
+    #logo {
+        position: absolute;
         width: 79px;
-        height: 25px;
-        margin: 10px;
+        height: 22px;
+        margin: auto;
     }
-    .toggle-button {
-        position: absolute;
-        right: 1rem;
-        top: .75rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 21px;
-    }
-    .toggle-button .bar {
-        height: 3px;
-        width: 75%;
-        background-color: blue;
-        border-radius: 10px;
-    }
-    .nav {
-        width: 100%;
-    }
-    .nav a {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        margin: 20px;
-    }
-    a:hover {
-        color: green;
-    }
-    .nav button {
-        background: #004AAD;
-        border-radius: 4px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 1px 1px;
-        position: relative;
-        left: 30%;
-    }
-    */
-    /*
-    .nav {
-        display: none;
-        position: absolute;
-        background-color: white;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding: 16px 0;
-    }
-    .nav a {
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 123.19%;
-        text-align: center;
-        color: #2F3A3B;
-        margin: 20px;
-    }
-    .nav button {
-        padding: 10px 10px;
-        background: #004AAD;
-        border-radius: 4px;
-        color: #000;
-    }
-    input[type=checkbox]:checked~.nav {
-        display: flex;
-        flex-direction: column;
-    }
-    input[type=checkbox] {
-        display: block;
-    }
-    .hamburger {
-        display: block;
-        margin: 10px;
-        height: 30px;
-        color: blue;
-        font-size: 19px;
-        background-color: #FFFFFF;
-    }*/
     /*Why Us*/
     .why {
         position: relative;
@@ -403,43 +344,44 @@ select {
     }
     /*footer*/
     .footer {
-        position: relative;
-        width: 428px;
+        position: absolute;
+        width: 80%;
         height: 528px;
-        top: 100px;
+        top: 700px;
+        left: 20%;
         background: #FFFFFF;
     }
     #lead img {
-        position: relative;
-        left: 20px;
+        position: absolute;
+        left: -80px;
+        top: -150px;
+        width: 79px;
+        height: 25px;
     }
     #lead p {
         display: none;
     }
     #explore {
         position: relative;
-        left: 20px;
+        left: -50px;
+        width: 100px;
+        top: 80px;
     }
-    #explore a {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: #4E6269;
-    }
-    #explore h5 {
+    #explore h5 a {
         margin-bottom: 15px;
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
         color: #4E6269
     }
-    #explore p {
+    #explore p a {
+        color: #4E6269;
         margin-bottom: 15px;
     }
     #legal {
         position: absolute;
-        left: 275px;
-        top: 69px;
+        left: 50%;
+        top: 90px;
     }
     #legal h5 {
         margin-bottom: 15px;
@@ -454,6 +396,11 @@ select {
         font-size: 16px;
         line-height: 24px;
         color: #4E6269;
+    }
+    #social {
+        position: relative;
+        left: -70px;
+        top: 100px;
     }
     #social h4 {
         position: relative;
@@ -475,10 +422,18 @@ select {
     }
     #social img {
         position: relative;
+        margin: -5px;
         width: 20px;
         height: 20px;
         left: -5px;
         top: 5px;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #social p {
+        position: relative;
+        display: block;
+        left: 25px;
+        top: -15px;
     }
 }

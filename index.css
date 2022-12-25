@@ -514,6 +514,10 @@
     #cinq a {
         color: #FFFFFF;
     }
+    
+    #view button {
+        display: none;
+    }
     /* 1. prospecting*/
     
     .ting {
@@ -1074,7 +1078,7 @@
         margin-top: 30px;
     }
     
-    @media (max-width: 400px) {
+    @media (max-width: 900px) {
         /*mobile view*/
         #logo img {
             width: 79px;
@@ -1095,342 +1099,206 @@
             display: none;
         }
         /*EXP*/
+        #ram img {
+            display: block;
+            width: 100%;
+        }
+        #exp {
+            width: 100%;
+            height: 400px;
+            left: 0px;
+        }
         #exp h2 {
             position: absolute;
-            height: 137px;
-            top: 148px;
-            font-size: 30px;
-            text-align: center;
+            top: 30px;
+            font-weight: 700;
+            font-size: 32px;
             line-height: 50px;
+            text-align: center;
             letter-spacing: 0.2px;
             color: #FFFFFF;
-        }
-        #ram img {
-            position: absolute;
             width: 90%;
-            height: 304px;
-            left: 2%;
-            top: 128px;
-            filter: blur(1.5px);
-            border-radius: 0px;
+            left: 0px;
         }
-        #exp2 {
+        #exp button {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            padding: 12px 40px;
             position: absolute;
-            width: 40%;
+            width: 50%;
             height: 48px;
-            left: 115px;
-            top: 334px;
-            background: #004AAD;
+            left: 100px;
+            top: 220px;
             border-radius: 4px;
         }
-        #exp2 a {
-            width: 90px;
-            height: 24px;
+        #exp button a {
             font-weight: 700;
             font-size: 16px;
-            line-height: 24px;
-            text-align: right;
-            color: #FFFFFF;
+            text-align: center;
         }
-        #exp2 img {
-            position: relative;
-            top: -22px;
-            left: 25px;
-        }
-        /*Pro*/
-        .pro #cinq {
+        #cinq {
             position: absolute;
+            top: 340px;
+            left: -610px;
+            text-align: center;
             width: 80%;
-            height: 24px;
-            left: 20px;
-            top: 450px;
         }
         #cinq h6 {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 24px;
-            text-align: center;
-            color: #004AAD;
+            left: 120px;
         }
         #cinq p {
+            width: 388px;
+            height: 216px;
+            left: 0px;
             font-weight: 400;
             font-size: 18px;
             line-height: 27px;
             text-align: center;
+            color: #222222;
         }
         #cinq button {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 12px 40px;
-            background: #004AAD;
-            border-radius: 4px;
-            position: relative;
-            top: 20px;
-            left: 50px;
+            left: 70px;
+        }
+        .pro {
+            position: absolute;
             width: 70%;
-        }
-        #cinq button a {
-            width: 158px;
-            height: 24px;
-            font-size: 16px;
-            line-height: 24px;
-            text-align: right;
-            color: #FFFFFF;
-        }
-        #done {
-            position: relative;
-            width: 85%;
-            height: 1024px;
+            height: 1094px;
             left: 20px;
-            top: 750px;
+            top: 800px;
             background: #F1F4FB;
             border-radius: 20px;
         }
-        #uno,
-        #duo,
-        #trois,
-        #quat {
-            position: relative;
-            justify-content: center;
-            align-items: center;
-            vertical-align: middle;
-            left: 10%;
-            top: 8px;
-            width: 80%;
+        #uno {
+            position: absolute;
+            width: 70%;
             height: 220px;
+            left: 30px;
+            top: -48px;
             background: #FFFFFF;
             box-shadow: 4px 4px 10px rgba(207, 201, 201, 0.24);
             border-radius: 20px;
             transform: matrix(1, 0, 0, 1, 0, 0);
-            margin-bottom: 10px;
         }
-        #uno img,
-        #duo img,
-        #trois img,
-        #quat img {
-            position: relative;
-            width: 10%;
-            height: 39px;
-            left: 10px;
-            top: 20px;
-            background: #EBF1F9;
+        #duo {
+            position: absolute;
+            width: 70%;
+            height: 220px;
+            left: -200px;
+            top: 360px;
+            background: #FFFFFF;
+            box-shadow: 4px 4px 10px rgba(207, 201, 201, 0.24);
             border-radius: 20px;
+            transform: matrix(1, 0, 0, 1, 0, 0);
         }
-        #uno h3,
-        #duo h3,
-        #trois h3,
-        #quat h3 {
-            position: relative;
-            width: 60%;
-            height: 24px;
-            left: 10px;
-            top: 20px;
-            font-size: 16px;
-            line-height: 24px;
+        #trois {
+            position: absolute;
+            width: 70%;
+            height: 220px;
+            left: 30px;
+            top: 610px;
+            background: #FFFFFF;
+            box-shadow: 4px 4px 10px rgba(207, 201, 201, 0.24);
+            border-radius: 20px;
+            transform: matrix(1, 0, 0, 1, 0, 0);
         }
-        #uno p,
-        #duo p,
-        #trois p,
-        #quat p {
-            position: relative;
-            left: 10px;
-            top: 20px;
-            width: 80%;
-            font-size: 14px;
-            line-height: 21px;
-            color: #4E6269;
+        #quat {
+            position: absolute;
+            width: 276px;
+            height: 220px;
+            left: -200px;
+            top: 1020px;
+            background: #FFFFFF;
+            box-shadow: 4px 4px 10px rgba(207, 201, 201, 0.24);
+            border-radius: 20px;
+            transform: matrix(1, 0, 0, 1, 0, 0);
         }
-        #done button {
+        #view button {
+            display: block;
+            position: absolute;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             padding: 12px 40px;
-            position: relative;
-            width: 65%;
+            width: 231px;
             height: 48px;
-            top: 30px;
-            left: 83px;
+            left: 85px;
+            top: 1020px;
             background: #004AAD;
             border-radius: 4px;
         }
-        #done button a {
+        #view a {
+            font-weight: 700;
             font-size: 16px;
             line-height: 24px;
             text-align: right;
             color: #FFFFFF;
         }
-        /*Pricing*/
         .douze {
             position: absolute;
             top: 1900px;
-        }
-        #dodici p {
-            font-weight: 700;
-            font-size: 13px;
-            line-height: 24px;
-            text-align: center;
-            color: #004AAD;
-        }
-        #dodici h3 {
-            font-weight: 600;
-            font-size: 26px;
-            line-height: 39px;
-            text-align: center;
-            color: #222222;
+            background-color: white;
+            left: 5%;
+            width: 70%;
         }
         #doze p {
+            width: 388px;
+            height: 108px;
+            left: 0px;
+            top: 95px;
             font-weight: 400;
             font-size: 18px;
             line-height: 27px;
             text-align: center;
             color: #6F7F85;
-            margin-bottom: 10px;
-        }
-        #trece p {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 24px;
-            text-align: center;
-            color: #181059;
-            opacity: 0.96;
-            margin-bottom: 10px;
-        }
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 24px;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #004AAD;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 16px;
-            width: 16px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
-        input:checked+.slider {
-            background-color: #004AAD;
-        }
-        input:focus+.slider {
-            box-shadow: 0 0 1px #004AAD;
-        }
-        input:checked+.slider:before {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(36px);
-            transform: translateX(36px);
-        }
-        .slider.round {
-            border-radius: 34px;
-        }
-        .slider.round:before {
-            border-radius: 50%;
         }
         #drp1,
         #drp2 {
-            margin-bottom: 20px;
-            width: 80%;
-            height: 65px;
-            position: relative;
-            left: 20px;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 24px;
-            color: #181059;
             background: #FFFFFF;
             border: 1px solid #004AAD;
             border-radius: 6px;
+        }
+        #drp3 {
             text-indent: 5px;
         }
-        .drp3 {
-            position: relative;
-            width: 80%;
-            height: 150px;
-            left: 20px;
-            background: #004AAD;
-            box-shadow: 6px 12px 32px rgba(0, 0, 0, 0.12);
-            border-radius: 6px;
-            color: #FFFFFF;
-        }
-        /*testimonial*/
         .testimonial {
-            position: relative;
-            top: 1400px;
+            position: absolute;
+            width: 348px;
+            height: 24px;
+            left: 30px;
+            top: 2600px;
             text-align: center;
         }
-        .testimonial h6 {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 24px;
-            color: #004AAD;
-        }
-        .testimonial h3 {
-            font-weight: 600;
-            font-size: 26px;
-            line-height: 39px;
-            color: #000000;
-        }
         #ok {
-            position: inherit;
-            left: 5%;
-            margin-top: 20px;
-            width: 80%;
-            height: 230px;
+            position: relative;
+            width: 340px;
+            height: 290px;
+            margin-bottom: 20px;
             background: #FFFFFF;
             box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.1);
             border-radius: 16px;
         }
-        #ok h4 {
-            padding-top: 20px;
-        }
-        /*footer*/
         .footer {
-            position: relative;
-            height: 528px;
-            top: 1500px;
-            background: #FFFFFF;
+            position: absolute;
+            top: 3207px;
+            left: 0px;
         }
         .footer h6 {
-            position: relative;
-            width: 80%;
-            height: 200px;
-            left: 22px;
+            position: absolute;
+            width: 30%;
+            height: 432px;
+            left: 1%;
             background: #F1F4FB;
-            border-radius: 20px;
-            text-align: center;
-            color: #004AAD;
-            padding: 10px;
+            border-radius: 10px;
+            box-shadow: none;
         }
         #lead img {
-            position: relative;
-            left: 20px;
+            position: absolute;
+            left: 0px;
+            top: 280px;
             width: 79px;
-            height: 22px;
-            margin-top: 30px;
+            height: 25px;
         }
         #lead p {
             display: none;
@@ -1438,31 +1306,27 @@
         #explore {
             position: relative;
             left: 20px;
-            width: 180px;
+            width: 100px;
+            top: 500px;
         }
-        #explore a {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: #4E6269;
-        }
-        #explore h5 {
+        #explore h5 a {
             margin-bottom: 15px;
             font-weight: 500;
             font-size: 18px;
             line-height: 27px;
             color: #4E6269
         }
-        #explore p {
+        #explore p a {
+            color: #4E6269;
             margin-bottom: 15px;
         }
         #legal {
-            position: relative;
-            left: 225px;
-            top: -175px;
-            width: 180px;
+            position: absolute;
+            left: 20%;
+            top: 520px;
         }
         #legal h5 {
+            margin-bottom: 15px;
             margin-bottom: 15px;
             font-weight: 500;
             font-size: 18px;
@@ -1470,8 +1334,16 @@
             color: #4E6269
         }
         #legal p {
+            font-weight: 400;
+            font-size: 16px;
             line-height: 24px;
             color: #4E6269;
+        }
+        #social {
+            position: relative;
+            left: 0px;
+            top: 550px;
+            width: 20%;
         }
         #social h4 {
             position: relative;
@@ -1493,10 +1365,18 @@
         }
         #social img {
             position: relative;
+            margin: -5px;
             width: 20px;
             height: 20px;
             left: -5px;
             top: 5px;
-            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        #social p {
+            position: relative;
+            display: block;
+            left: 25px;
+            top: -15px;
         }
     }
