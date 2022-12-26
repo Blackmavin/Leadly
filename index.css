@@ -8,6 +8,7 @@
         font-size: 100%;
         vertical-align: baseline;
         background: transparent;
+        outline: 1px solid red;
     }
     
     body {
@@ -112,10 +113,11 @@
     .nav {
         position: relative;
         left: 120px;
-        top: 25px;
+        top: 10px;
         display: flex;
         justify-content: space-evenly;
         align-items: right;
+        width: 100%;
     }
     
     #topnav a {
@@ -177,24 +179,28 @@
         position: relative;
         top: 240px;
         left: 50px;
+        width: 300px;
     }
     
     #grow {
         position: relative;
         top: 155px;
         left: 400px;
+        width: 300px;
     }
     
     #free {
         position: relative;
         top: 180px;
         left: 50px;
+        width: 300px;
     }
     
     #ask {
         position: relative;
         top: 105px;
         left: 400px;
+        width: 300px;
     }
     
     #get h6,
@@ -221,6 +227,7 @@
         font-size: 16px;
         line-height: 24px;
         color: #4E6269;
+        width: 300px;
     }
     
     #exp button {
@@ -327,9 +334,6 @@
         box-shadow: 4px 4px 64px rgba(207, 201, 201, 0.2);
         border-radius: 20px;
         transform: matrix(1.08, 0, 0, 1.07, 70, 100);
-        flex: none;
-        order: 0;
-        flex-grow: 0;
     }
     
     #uno h3 {
@@ -465,7 +469,7 @@
         width: 197px;
         height: 214px;
         border-radius: 20px;
-        transform: matrix(1, 0, 0, 1, 600, -700);
+        transform: matrix(1, 0, 0, 1, 700, -700);
     }
     
     #cinq h6 {
@@ -829,7 +833,7 @@
     .douze {
         position: absolute;
         width: 1206px;
-        height: 800px;
+        height: 700px;
         left: 80px;
         top: 3880px;
         background: #F1F4FB;
@@ -969,8 +973,8 @@
     
     .testimonial {
         position: absolute;
-        left: 100px;
-        top: 4700px;
+        left: 90px;
+        top: 4600px;
         width: 1206px;
         height: 602px;
         background: #ffffff;
@@ -996,12 +1000,12 @@
     /*FOOTER*/
     
     .footer {
-        width: 1206px;
+        width: 1200px;
         height: 382px;
         background: #ffffff;
         position: absolute;
         left: 100px;
-        top: 4950px;
+        top: 5100px;
     }
     
     .footer h6 {
@@ -1057,7 +1061,7 @@
     #legal {
         position: absolute;
         top: 220px;
-        left: 600px;
+        left: 650px;
         width: 180px;
     }
     
@@ -1069,7 +1073,7 @@
     #social {
         position: absolute;
         top: 220px;
-        left: 900px;
+        left: 1000px;
     }
     
     #social img {
@@ -1077,9 +1081,10 @@
         height: 40px;
         margin-top: 30px;
     }
-#social p {
-    display: none;
-}
+    
+    #social p {
+        display: none;
+    }
     
     @media (max-width: 900px) {
         /*mobile view*/
@@ -1104,7 +1109,9 @@
         /*EXP*/
         #ram img {
             display: block;
-            width: 100%;
+            width: 438px;
+            position: absolute;
+            top: 30px;
         }
         #exp {
             width: 100%;
@@ -1120,8 +1127,8 @@
             text-align: center;
             letter-spacing: 0.2px;
             color: #FFFFFF;
-            width: 90%;
-            left: 0px;
+            width: 388px;
+            left: 15px;
         }
         #exp button {
             display: flex;
@@ -1129,9 +1136,9 @@
             justify-content: center;
             align-items: center;
             position: absolute;
-            width: 50%;
+            width: 198px;
             height: 48px;
-            left: 100px;
+            left: 110px;
             top: 220px;
             border-radius: 4px;
         }
@@ -1140,12 +1147,14 @@
             font-size: 16px;
             text-align: center;
         }
+        /*prospecting*/
         #cinq {
             position: absolute;
             top: 340px;
-            left: -610px;
+            right: 205%;
             text-align: center;
-            width: 80%;
+            width: 100%;
+            left: -160%;
         }
         #cinq h6 {
             left: 120px;
@@ -1162,61 +1171,58 @@
         }
         #cinq button {
             left: 70px;
+            width: 120%;
         }
         .pro {
             position: absolute;
-            width: 70%;
-            height: 1094px;
+            width: 90%;
+            height: 1115px;
             left: 20px;
             top: 800px;
             background: #F1F4FB;
             border-radius: 20px;
         }
-        #uno {
-            position: absolute;
-            width: 70%;
+        .pro #uno {
+            position: relative;
+            width: 60%;
             height: 220px;
-            left: 30px;
+            left: 0%;
             top: -48px;
             background: #FFFFFF;
             box-shadow: 4px 4px 10px rgba(207, 201, 201, 0.24);
             border-radius: 20px;
-            transform: matrix(1, 0, 0, 1, 0, 0);
         }
-        #duo {
+        .pro #duo {
             position: absolute;
-            width: 70%;
+            width: 60%;
             height: 220px;
-            left: -200px;
-            top: 360px;
+            right: 380px;
+            top: 370px;
             background: #FFFFFF;
             box-shadow: 4px 4px 10px rgba(207, 201, 201, 0.24);
             border-radius: 20px;
-            transform: matrix(1, 0, 0, 1, 0, 0);
         }
-        #trois {
+        .pro #trois {
             position: absolute;
-            width: 70%;
+            width: 60%;
             height: 220px;
-            left: 30px;
-            top: 610px;
+            left: 0%;
+            top: 630px;
             background: #FFFFFF;
             box-shadow: 4px 4px 10px rgba(207, 201, 201, 0.24);
             border-radius: 20px;
-            transform: matrix(1, 0, 0, 1, 0, 0);
         }
-        #quat {
+        .pro #quat {
             position: absolute;
-            width: 276px;
+            width: 60%;
             height: 220px;
-            left: -200px;
-            top: 1020px;
+            right: 380px;
+            top: 1050px;
             background: #FFFFFF;
             box-shadow: 4px 4px 10px rgba(207, 201, 201, 0.24);
             border-radius: 20px;
-            transform: matrix(1, 0, 0, 1, 0, 0);
         }
-        #view button {
+        .pro #view button {
             display: block;
             position: absolute;
             display: flex;
@@ -1224,10 +1230,10 @@
             justify-content: center;
             align-items: center;
             padding: 12px 40px;
-            width: 231px;
+            width: 65%;
             height: 48px;
-            left: 85px;
-            top: 1020px;
+            left: 15%;
+            top: 1050px;
             background: #004AAD;
             border-radius: 4px;
         }
@@ -1238,15 +1244,16 @@
             text-align: right;
             color: #FFFFFF;
         }
+        /*pricing*/
         .douze {
             position: absolute;
-            top: 1900px;
+            top: 2000px;
             background-color: white;
-            left: 5%;
+            left: 50px;
             width: 70%;
         }
         #doze p {
-            width: 388px;
+            width: 100%;
             height: 108px;
             left: 0px;
             top: 95px;
@@ -1256,42 +1263,50 @@
             text-align: center;
             color: #6F7F85;
         }
+        #trece {
+            width: 100%;
+        }
         #drp1,
         #drp2 {
             background: #FFFFFF;
             border: 1px solid #004AAD;
             border-radius: 6px;
+            width: 100%;
         }
-        #drp3 {
+        .drp3 {
             text-indent: 5px;
+            width: 100%;
         }
+        /*testimonial*/
         .testimonial {
             position: absolute;
-            width: 348px;
+            width: 70%;
             height: 24px;
-            left: 30px;
-            top: 2600px;
+            left: 10%;
+            top: 2700px;
             text-align: center;
         }
         #ok {
             position: relative;
-            width: 340px;
+            width: 70%;
             height: 290px;
             margin-bottom: 20px;
             background: #FFFFFF;
             box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.1);
             border-radius: 16px;
         }
+        /*footer*/
         .footer {
             position: absolute;
-            top: 3207px;
+            top: 3277px;
             left: 0px;
+            width: 90%;
         }
         .footer h6 {
             position: absolute;
-            width: 30%;
+            width: 80%;
             height: 432px;
-            left: 1%;
+            left: 7%;
             background: #F1F4FB;
             border-radius: 10px;
             box-shadow: none;
@@ -1325,7 +1340,7 @@
         }
         #legal {
             position: absolute;
-            left: 20%;
+            left: 50%;
             top: 520px;
         }
         #legal h5 {
@@ -1346,7 +1361,7 @@
             position: relative;
             left: 0px;
             top: 550px;
-            width: 20%;
+            width: 40%;
         }
         #social h4 {
             position: relative;
